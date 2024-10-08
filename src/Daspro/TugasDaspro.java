@@ -39,8 +39,8 @@ public class TugasDaspro {
         jumlahBeli = Integer.parseInt(input.readLine());
 
         //Kondisi
-        if ((kodeSusu == 1) || (kodeSusu == 2) || (kodeSusu == 3)
-                && (kodeUkuran.equals("S")) || (kodeUkuran.equals("M")) || (kodeUkuran.equals("L"))) {
+        if ((kodeSusu == 1 || kodeSusu == 2 || kodeSusu == 3)
+                && (kodeUkuran.equals("S")|| kodeUkuran.equals("M") || kodeUkuran.equals("L"))) {
             if (kodeSusu == 1){
                 merkBarang = "Susu Indomilk";
                 if (kodeUkuran.equals("S")){
@@ -60,9 +60,7 @@ public class TugasDaspro {
                     hargaBarang = 9500;
                 }
             }
-        } else {
-            System.out.println("Terjadi Kesalahan Coba Periksa Inputan");
-        }
+
         //Kondisi
         //LogikaAritmatika
         subtotal = jumlahBeli * hargaBarang;
@@ -79,17 +77,21 @@ public class TugasDaspro {
 
         //Output
         System.out.println();
-        System.out.println("=============================");
-        System.out.println("    STRUK PENJUALAN SUSU");
-        System.out.println("=============================");
-        System.out.println("Nama Pembeli      \t: \t " + namaPembeli);
-        System.out.println("Merk Barang       \t: \t " + merkBarang);
-        System.out.println("Jenis Ukuran      \t: \t " + jenisUkuran);
-        System.out.println("Jumlah Beli       \t: \t " + jumlahBeli);
-        System.out.println("Harga Barang      \t: \t Rp." + hargaBarang);
-        System.out.println("Jumlah Pembayaran \t: \t Rp." + subtotal);
-        System.out.println("Potongan          \t: \t Rp." + totalDiskon);
-        System.out.println("Pajak             \t: \t Rp." + totalPajak);
-        System.out.println("Total Bayar       \t: \t Rp." + total);
+        System.out.println("||==========================================||");
+        System.out.println("||           STRUK PENJUALAN SUSU           ||");
+        System.out.println("||==========================================||");
+        System.out.println("   Nama Pembeli      \t: \t " + namaPembeli);
+        System.out.println("   Merk Barang       \t: \t " + merkBarang);
+        System.out.println("   Jenis Ukuran      \t: \t " + jenisUkuran);
+        System.out.println("   Jumlah Beli       \t: \t " + jumlahBeli);
+        System.out.println("   Harga Barang      \t: \t Rp." + hargaBarang);
+        System.out.println("   Jumlah Pembayaran \t: \t Rp." + subtotal);
+        System.out.println("   Potongan          \t: \t Rp." + totalDiskon);
+        System.out.println("   Pajak             \t: \t Rp." + totalPajak);
+        System.out.println("   Total Bayar       \t: \t Rp." + total);
+
+        } else {
+            System.out.println("Terjadi Kesalahan Coba Periksa Inputan");
+        }
     }
 }
