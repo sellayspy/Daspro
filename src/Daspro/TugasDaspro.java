@@ -1,7 +1,7 @@
 package Daspro;
 import java.io.BufferedReader;
 import java.io.IOException;
-import  java.io.InputStreamReader;
+import java.io.InputStreamReader;
 
 public class TugasDaspro {
     public static void main(String[] args) throws NumberFormatException, IOException {
@@ -77,9 +77,9 @@ public class TugasDaspro {
 
         //Output
         System.out.println();
-        System.out.println("||==========================================||");
-        System.out.println("||           STRUK PENJUALAN SUSU           ||");
-        System.out.println("||==========================================||");
+        System.out.println("||================================================||");
+        System.out.println("||              STRUK PENJUALAN SUSU              ||");
+        System.out.println("||================================================||");
         System.out.println("   Nama Pembeli      \t: \t " + namaPembeli);
         System.out.println("   Merk Barang       \t: \t " + merkBarang);
         System.out.println("   Jenis Ukuran      \t: \t " + jenisUkuran);
